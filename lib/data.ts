@@ -3,7 +3,7 @@ import { CgWorkAlt } from 'react-icons/cg';
 import { FaReact } from 'react-icons/fa';
 import { LuGraduationCap } from 'react-icons/lu';
 import gameHub from '@/public/gamehub.webp';
-import gymDesign from '@/public/gymDesign.webp.webp';
+import gymDesign from '@/public/gymDesign.webp';
 import portfolioCover from '@/public/portfolioCover.webp';
 
 export const links = [
