@@ -7,7 +7,6 @@ import profileImg from '@/public/profileImg.webp';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
 import { FaGithub } from 'react-icons/fa6';
 import { FaLinkedin } from 'react-icons/fa';
-import { BsArrowRight } from 'react-icons/bs';
 import { IoMailUnread } from 'react-icons/io5';
 
 const Hero = () => {
