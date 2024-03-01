@@ -59,9 +59,10 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: 'Project 1',
-    description: 'Project Description',
-    tags: ['React', 'Next.js', 'MongoDB', 'Tailwind', 'Prisma'],
+    title: 'Video Game Discovery App',
+    description:
+      'This is a mini-version of the rawg website, a popular video game discovery platform',
+    tags: ['React & React Query', 'Chakra UI', 'TypeScript'],
     imageUrl: gameHub,
   },
   {
