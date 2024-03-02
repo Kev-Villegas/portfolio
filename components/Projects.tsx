@@ -6,7 +6,7 @@ import SectionHeading from './SectionHeading';
 
 const Projects = () => {
   return (
-    <section>
+    <section id='projects' className='scroll-mt-28'>
       <SectionHeading>My Projects</SectionHeading>
       <div>
         {projectsData.map((project, index) => (
