@@ -11,7 +11,10 @@ import { IoMailUnread } from 'react-icons/io5';
 
 const Hero = () => {
   return (
-    <section className='mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]'>
+    <section
+      className='mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]'
+      id='hero'
+    >
       <div className='flex items-center justify-center'>
         <div>
           <motion.div
