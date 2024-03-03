@@ -1,27 +1,19 @@
 'use client';
+import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
-import React, { useEffect } from 'react';
 import { FaGithub } from 'react-icons/fa6';
 import { FaLinkedin } from 'react-icons/fa';
+import { useSectionInView } from '@/lib/hooks';
 import { IoMailUnread } from 'react-icons/io5';
 import profileImg from '@/public/profileImg.webp';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
-import { useInView } from 'react-intersection-observer';
-import { useActiveSectionContext } from '@/context/active-section-context';
 
 const Hero = () => {
-  const { ref, inView } = useInView({
-    threshold: 0.5,
-  });
-  const { setActiveSection, timeOfLastClick } = useActiveSectionContext();
 
-  useEffect(() => {
-    if (inView && Date.now() - timeOfLastClick > 1000) {
-      setActiveSection('Home');
-    }
-  }, [inView, setActiveSection, timeOfLastClick]);
+  const {ref} = useSectionInView('Home', 0.5);
+
   return (
     <section
       ref={ref}
