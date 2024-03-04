@@ -83,7 +83,7 @@ export const skillsData = [
   'HTML5',
   'CSS3',
   'Tailwind CSS',
-  'Material UI',
+  'Chakra UI',
   'Bootstrap',
   'Framer Motion',
   'JavaScript ES6+',
