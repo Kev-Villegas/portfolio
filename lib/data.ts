@@ -35,25 +35,33 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: 'Graduated bootcamp',
-    location: 'Córdoba - Argentina',
-    description: 'Text 1',
-    icon: React.createElement(LuGraduationCap),
-    date: 'Year - Year',
+    title: 'Python Fundamentals',
+    description:
+      'First contact with programming. Learned Just The Python Basics And How Programming Works.',
+    date: '2020',
   },
   {
-    title: 'Front-End Developer',
-    location: 'Córdoba - Argentina',
-    description: 'Text 2',
-    icon: React.createElement(CgWorkAlt),
-    date: 'Year - Year',
+    title: 'Web Development Fundamentals',
+    description: 'Studied HTML, CSS For Web Development Basics.',
+    date: '2021',
   },
   {
-    title: 'Full-Stack Developer',
-    location: 'Córdoba - Argentina',
-    description: 'Text 3',
-    icon: React.createElement(FaReact),
-    date: '2022 - Present',
+    title: 'Introduction to JavaScript and React',
+    description:
+      'Began learning JavaScript and basics of React. Also learned Git and GitHub.',
+    date: '2022',
+  },
+  {
+    title: 'Advanced Web Development with TypeScript, Next.js, and Prisma',
+    description:
+      'Advanced with TypeScript, Next.js, and Prisma. Explored Tailwind CSS and Chakra UI.',
+    date: '2023',
+  },
+  {
+    title: 'UX/UI Design With Figma',
+    description:
+      'Learned Figma for UI/UX design and WordPress for content management.',
+    date: '2024',
   },
 ] as const;
 
