@@ -1,9 +1,11 @@
 import React from 'react';
-import { CgWorkAlt } from 'react-icons/cg';
-import { FaReact } from 'react-icons/fa';
-import { LuGraduationCap } from 'react-icons/lu';
+import { FaHtml5 } from 'react-icons/fa';
+import { FaFigma } from 'react-icons/fa';
 import gameHub from '@/public/gamehub.webp';
+import { TbBrandPython } from 'react-icons/tb';
+import { TbBrandNextjs } from 'react-icons/tb';
 import gymDesign from '@/public/gymDesign.webp';
+import { IoLogoJavascript } from 'react-icons/io5';
 import portfolioCover from '@/public/portfolioCover.webp';
 
 export const links = [
@@ -38,29 +40,34 @@ export const experiencesData = [
     title: 'Python Fundamentals',
     description:
       'First contact with programming. Learned Just The Python Basics And How Programming Works.',
+    icon: React.createElement(TbBrandPython),
     date: '2020',
   },
   {
     title: 'Web Development Fundamentals',
     description: 'Studied HTML, CSS For Web Development Basics.',
+    icon: React.createElement(FaHtml5),
     date: '2021',
   },
   {
     title: 'Introduction to JavaScript and React',
     description:
       'Began learning JavaScript and basics of React. Also learned Git and GitHub.',
+
+    icon: React.createElement(IoLogoJavascript),
     date: '2022',
   },
   {
     title: 'Advanced Web Development with TypeScript, Next.js, and Prisma',
     description:
       'Advanced with TypeScript, Next.js, and Prisma. Explored Tailwind CSS and Chakra UI.',
+    icon: React.createElement(TbBrandNextjs),
     date: '2023',
   },
   {
     title: 'UX/UI Design With Figma',
-    description:
-      'Learned Figma for UI/UX design and WordPress for content management.',
+    description: 'Learned Figma for UI/UX design and also basics of Wordpress.',
+    icon: React.createElement(FaFigma),
     date: '2024',
   },
 ] as const;
