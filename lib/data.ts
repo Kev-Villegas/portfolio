@@ -58,7 +58,8 @@ export const experiencesData = [
     date: '2022',
   },
   {
-    title: 'Advanced Web Development with TypeScript, Next.js, and Prisma',
+    title:
+      'Advanced Web Development with TypeScript + Zod, Next.js, and Prisma',
     description:
       'Advanced with TypeScript, Next.js, and Prisma. Explored Tailwind CSS and Chakra UI.',
     icon: React.createElement(TbBrandNextjs),
