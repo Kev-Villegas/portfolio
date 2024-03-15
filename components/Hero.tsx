@@ -9,10 +9,11 @@ import { useSectionInView } from '@/lib/hooks';
 import { IoMailUnread } from 'react-icons/io5';
 import profileImg from '@/public/profileImg.webp';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
+import { useActiveSectionContext } from '@/context/active-section-context';
 
 const Hero = () => {
-
-  const {ref} = useSectionInView('Home', 0.5);
+  const { ref } = useSectionInView('Home', 0.5);
+  const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
 
   return (
     <section
@@ -66,6 +67,10 @@ const Hero = () => {
       >
         <Link
           href='#contact'
+          onClick={() => {
+            setActiveSection('Contact');
+            setTimeOfLastClick(Date.now());
+          }}
           className='bg-gray-900 text-[#F8F8FF] font-medium font-secondary px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition'
         >
           Contact Me <IoMailUnread className='opacity-70' size={20} />
