@@ -38,7 +38,7 @@ const Experience = () => {
                 className='bg-opacity-100 border-[0.12rem] py-2 px-2 border-white text-2xl text-center justify-center'
               >
                 <motion.h3
-                  variants={fadeIn('up', 0.4)}
+                  variants={fadeIn('up', 0.3)}
                   initial='hidden'
                   whileInView={'show'}
                   viewport={{ once: true, amount: 0.3 }}
@@ -60,7 +60,7 @@ const Experience = () => {
                 {item.title}
               </motion.h3>
               <motion.p
-                variants={fadeIn('left', 0.5)}
+                variants={fadeIn('left', 0.3)}
                 initial='hidden'
                 whileInView={'show'}
                 viewport={{ once: true, amount: 0.3 }}
