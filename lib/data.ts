@@ -102,7 +102,7 @@ export const skillsData = [
   'Chakra UI',
   'Bootstrap',
   'Framer Motion',
-  'JavaScript ES6+',
+  'JavaScript',
   'React.js',
   'TypeScript',
   'Next.js',
