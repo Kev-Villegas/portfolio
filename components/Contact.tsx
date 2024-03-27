@@ -77,7 +77,7 @@ const Contact = () => {
           placeholder='Your Name...'
         />
         {errors.name && (
-          <p className='text-red-500 pb-2'>{errors.name.message}</p>
+          <p className='text-red-600 pb-2'>{errors.name.message}</p>
         )}
         <input
           {...register('email')}
@@ -89,7 +89,7 @@ const Contact = () => {
           placeholder='Your email...'
         />
         {errors.email && (
-          <p className='text-red-500 pb-2'>{errors.email.message}</p>
+          <p className='text-red-600 mt-2'>{errors.email.message}</p>
         )}
         <textarea
           {...register('message')}
@@ -100,7 +100,7 @@ const Contact = () => {
           maxLength={5000}
         />
         {errors.message && (
-          <p className='text-red-500 pb-2'>{errors.message.message}</p>
+          <p className='text-red-600 pb-2'>{errors.message.message}</p>
         )}
         <button
           type='submit'
