@@ -5,8 +5,19 @@ import gameHub from '@/public/gamehub.webp';
 import { TbBrandPython } from 'react-icons/tb';
 import { TbBrandNextjs } from 'react-icons/tb';
 import gymDesign from '@/public/gymDesign.webp';
+import css from '@/public/skillsImages/css.webp';
+import git from '@/public/skillsImages/git.webp';
 import { IoLogoJavascript } from 'react-icons/io5';
+import html from '@/public/skillsImages/html.webp';
+import next from '@/public/skillsImages/next.webp';
+import react from '@/public/skillsImages/react.webp';
+import figma from '@/public/skillsImages/figma.webp';
+import github from '@/public/skillsImages/github.webp';
+import chakra from '@/public/skillsImages/chakraui.webp';
 import portfolioCover from '@/public/portfolioCover.webp';
+import tailwind from '@/public/skillsImages/tailwind.webp';
+import javascript from '@/public/skillsImages/javascript.webp';
+import typescript from '@/public/skillsImages/typescript.webp';
 
 export const links = [
   {
@@ -96,17 +107,48 @@ export const projectsData = [
 ] as const;
 
 export const skillsData = [
-  'HTML5',
-  'CSS3',
-  'Tailwind CSS',
-  'Chakra UI',
-  'Bootstrap',
-  'Framer Motion',
-  'JavaScript',
-  'React.js',
-  'TypeScript',
-  'Next.js',
-  'Prisma',
-  'Git',
-  'GitHub',
+  {
+    name: 'HTML',
+    image: html,
+  },
+  {
+    name: 'CSS3',
+    image: css,
+  },
+  {
+    name: 'Chakra UI',
+    image: chakra,
+  },
+  {
+    name: 'Tailwind CSS',
+    image: tailwind,
+  },
+  {
+    name: 'JavaScript',
+    image: javascript,
+  },
+  {
+    name: 'React.js',
+    image: react,
+  },
+  {
+    name: 'TypeScript',
+    image: typescript,
+  },
+  {
+    name: 'Next.js',
+    image: next,
+  },
+  {
+    name: 'Git',
+    image: git,
+  },
+  {
+    name: 'GitHub',
+    image: github,
+  },
+  {
+    name: 'Figma',
+    image: figma,
+  },
 ] as const;
