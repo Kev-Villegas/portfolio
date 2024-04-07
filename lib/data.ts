@@ -89,19 +89,24 @@ export const projectsData = [
     title: 'Video Game Discovery App',
     description:
       'This is a mini-version of the rawg website, a popular video game discovery platform',
+    type: 'BackEnd',
     tags: ['React & React Query', 'Chakra UI', 'TypeScript'],
     imageUrl: gameHub,
   },
   {
     title: 'Project 2',
-    description: 'Project Description',
+    description:
+      'This is a mini-version of the rawg website, a popular video game discovery platform',
     tags: ['React', 'TypeScript', 'Next.js', 'Tailwind', 'Redux'],
+    type: 'FullStack',
     imageUrl: gymDesign,
   },
   {
     title: 'Project 3',
-    description: 'Project Description',
+    description:
+      'This is a mini-version of the rawg website, a popular video game discovery platform',
     tags: ['React', 'Next.js', 'SQL', 'Tailwind', 'Framer'],
+    type: 'FrontEnd',
     imageUrl: portfolioCover,
   },
 ] as const;
