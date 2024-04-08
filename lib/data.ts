@@ -113,7 +113,7 @@ export const projectsData = [
 
 export const skillsData = [
   {
-    name: 'HTML',
+    name: 'HTML5',
     image: html,
   },
   {
