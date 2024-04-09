@@ -44,18 +44,22 @@ const Hero = () => {
         </div>
       </div>
       <motion.h1
-        className='mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl'
+        className='mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-3xl w-[700px]'
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className='font-bold font-primary'>Hello, I'm Kevin.</span> I'm a{' '}
-        <span className='font-bold font-primary'>Front-End Developer</span> with{' '}
-        <span className='font-bold font-primary'>8 Years</span> of experience. I
-        enjoy building{' '}
-        <span className='italic font-primary'>Modern Websites</span>. My focus
-        is{' '}
+        <span className='font-bold font-primary'>Hello, I'm Kevin. A </span>
+        <span className='font-bold font-primary'>
+          Front-End Developer from Argentina.{' '}
+        </span>
+        <span className='italic font-primary'>
+          I have been in web development for 4 years
+        </span>{' '}
+        <span className='italic font-primary'>
+          and I'm Currently Focused On
+        </span>{' '}
         <span className='underline font-primary'>
-          React & TypeScript (Next.js)
+          Next.js with TypeScript and React
         </span>
         .
       </motion.h1>
