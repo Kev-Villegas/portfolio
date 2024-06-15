@@ -3,8 +3,8 @@ import About from '@/components/About';
 import Skills from '@/components/Skills';
 import Contact from '@/components/Contact';
 import Projects from '@/components/Projects';
-import Experience from '@/components/Experience';
 import SectionDivider from '@/components/SectionDivider';
+import { skillsData } from '@/lib/data';
 
 export default function Home() {
   return (
@@ -14,7 +14,6 @@ export default function Home() {
       <About />
       <Projects />
       <Skills />
-      <Experience />
       <Contact />
     </main>
   );

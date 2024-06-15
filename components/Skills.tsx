@@ -1,10 +1,10 @@
-'use client';
-import React from 'react';
-import Image from 'next/image';
-import { motion } from 'framer-motion';
-import { skillsData } from '@/lib/data';
-import SectionHeading from './SectionHeading';
-import { useSectionInView } from '@/lib/hooks';
+"use client";
+import React from "react";
+import Image from "next/image";
+import { motion } from "framer-motion";
+import { skillsData } from "@/lib/data";
+import SectionHeading from "./SectionHeading";
+import { useSectionInView } from "@/lib/hooks";
 
 type skillsProps = (typeof skillsData)[number];
 
@@ -23,31 +23,38 @@ const fadeInAnimationVariants = {
 };
 
 const Skills = ({ name, image }: skillsProps) => {
-  const { ref } = useSectionInView('Skills');
+  const { ref } = useSectionInView("Skills");
 
   return (
     <section
-      id='skills'
+      id="skills"
       ref={ref}
-      className='mb-28 max-w-[53rem] scroll-mt-28 text-center sm:mb-40 '
+      className="mb-28 max-w-[53rem] scroll-mt-28 text-center sm:mb-40 "
     >
       <SectionHeading>My Skills</SectionHeading>
-      <ul className='flex flex-wrap justify-center gap-3 text-lg text-gray-800'>
+      <ul className="flex flex-wrap justify-center gap-3 text-lg text-gray-800">
         {skillsData.map((skill, index) => (
-          <li
+          <motion.li
             key={index}
-            className='bg-[#383d46] text-base text-[#ececec] font-medium borderBlack rounded-xl px-2 font-primary flex text-center justify-center items-center cursor-pointer relative overflow-hidden transition-transform duration-300 transform-gpu hover:scale-110'
+            variants={fadeInAnimationVariants}
+            initial="initial"
+            whileInView="animate"
+            viewport={{
+              once: true,
+            }}
+            custom={index}
+            className="bg-[#383d46] text-base text-[#ececec] font-medium borderBlack rounded-xl px-2 font-primary flex text-center justify-center items-center cursor-pointer relative overflow-hidden transition-transform duration-300 transform-gpu hover:scale-110"
           >
-            <div className='transition-colors duration-300 p-2 rounded-lg flex items-center'>
+            <div className="transition-colors duration-300 p-[6px] rounded-lg flex items-center">
               <Image
                 src={skill.image}
                 alt={skill.name}
                 quality={90}
-                className='w-[22px] h-[22px] mr-2 rounded-[4px] cursor-pointer'
+                className="w-[22px] h-[22px] mr-2 rounded-[4px] cursor-pointer"
               />
               <span>{skill.name}</span>
             </div>
-          </li>
+          </motion.li>
         ))}
       </ul>
     </section>
