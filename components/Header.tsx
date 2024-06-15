@@ -33,7 +33,7 @@ const Header = () => {
                   setTimeOfLastClick(Date.now());
                 }}
                 className={clsx(
-                  'flex w-full items-center justify-center px-3 py-3 hover:text-gray-300 transition',
+                  'flex w-full items-center justify-center px-4 py-3 hover:text-gray-300 transition',
                   {
                     'text-gray-950': activeSection === link.name,
                   }

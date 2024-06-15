@@ -1,159 +1,155 @@
-import React from 'react';
-import { FaHtml5 } from 'react-icons/fa';
-import { FaFigma } from 'react-icons/fa';
-import gameHub from '@/public/gamehub.webp';
-import { TbBrandPython } from 'react-icons/tb';
-import { TbBrandNextjs } from 'react-icons/tb';
-import gymDesign from '@/public/gymDesign.webp';
-import css from '@/public/skillsImages/css.webp';
-import git from '@/public/skillsImages/git.webp';
-import { IoLogoJavascript } from 'react-icons/io5';
-import html from '@/public/skillsImages/html.webp';
-import next from '@/public/skillsImages/next.webp';
-import react from '@/public/skillsImages/react.webp';
-import figma from '@/public/skillsImages/figma.webp';
-import github from '@/public/skillsImages/github.webp';
-import chakra from '@/public/skillsImages/chakraui.webp';
-import portfolioCover from '@/public/portfolioCover.webp';
-import tailwind from '@/public/skillsImages/tailwind.webp';
-import javascript from '@/public/skillsImages/javascript.webp';
-import typescript from '@/public/skillsImages/typescript.webp';
+import React from "react";
+import { FaHtml5 } from "react-icons/fa";
+import { FaFigma } from "react-icons/fa";
+import gameHub from "@/public/gamehub.webp";
+import { TbBrandPython } from "react-icons/tb";
+import { TbBrandNextjs } from "react-icons/tb";
+import gymDesign from "@/public/gymDesign.webp";
+import css from "@/public/skillsImages/css.webp";
+import git from "@/public/skillsImages/git.webp";
+import { IoLogoJavascript } from "react-icons/io5";
+import html from "@/public/skillsImages/html.webp";
+import next from "@/public/skillsImages/next.webp";
+import react from "@/public/skillsImages/react.webp";
+import figma from "@/public/skillsImages/figma.webp";
+import github from "@/public/skillsImages/github.webp";
+import chakra from "@/public/skillsImages/chakraui.webp";
+import portfolioCover from "@/public/portfolioCover.webp";
+import tailwind from "@/public/skillsImages/tailwind.webp";
+import javascript from "@/public/skillsImages/javascript.webp";
+import typescript from "@/public/skillsImages/typescript.webp";
 
 export const links = [
   {
-    name: 'Home',
-    hash: '#home',
+    name: "Home",
+    hash: "#home",
   },
   {
-    name: 'About',
-    hash: '#about',
+    name: "About",
+    hash: "#about",
   },
   {
-    name: 'Projects',
-    hash: '#projects',
+    name: "Projects",
+    hash: "#projects",
   },
   {
-    name: 'Skills',
-    hash: '#skills',
+    name: "Skills",
+    hash: "#skills",
   },
   {
-    name: 'Experience',
-    hash: '#experience',
-  },
-  {
-    name: 'Contact',
-    hash: '#contact',
+    name: "Contact",
+    hash: "#contact",
   },
 ] as const;
 
 export const experiencesData = [
   {
-    title: 'Python Fundamentals',
+    title: "Python Fundamentals",
     description:
-      'First contact with programming. Learned Just The Python Basics And How Programming Works.',
+      "First contact with programming. Learned Just The Python Basics And How Programming Works.",
     icon: React.createElement(TbBrandPython),
-    date: '2020',
+    date: "2020",
   },
   {
-    title: 'Web Development Fundamentals',
-    description: 'Studied HTML, CSS For Web Development Basics.',
+    title: "Web Development Fundamentals",
+    description: "Studied HTML, CSS For Web Development Basics.",
     icon: React.createElement(FaHtml5),
-    date: '2021',
+    date: "2021",
   },
   {
-    title: 'Introduction to JavaScript and React',
+    title: "Introduction to JavaScript and React",
     description:
-      'Began learning JavaScript and basics of React. Also learned Git and GitHub.',
+      "Began learning JavaScript and basics of React. Also learned Git and GitHub.",
 
     icon: React.createElement(IoLogoJavascript),
-    date: '2022',
+    date: "2022",
   },
   {
     title:
-      'Advanced Web Development with TypeScript + Zod, Next.js, and Prisma',
+      "Advanced Web Development with TypeScript + Zod, Next.js, and Prisma",
     description:
-      'Advanced with TypeScript, Next.js, and Prisma. Explored Tailwind CSS and Chakra UI.',
+      "Advanced with TypeScript, Next.js, and Prisma. Explored Tailwind CSS and Chakra UI.",
     icon: React.createElement(TbBrandNextjs),
-    date: '2023',
+    date: "2023",
   },
   {
-    title: 'UX/UI Design With Figma',
-    description: 'Learned Figma for UI/UX design and also basics of Wordpress.',
+    title: "UX/UI Design With Figma",
+    description: "Learned Figma for UI/UX design and also basics of Wordpress.",
     icon: React.createElement(FaFigma),
-    date: '2024',
+    date: "2024",
   },
 ] as const;
 
 export const projectsData = [
   {
-    title: 'Video Game Discovery App',
+    title: "Video Game Discovery App",
     description:
-      'This is a mini-version of the rawg website, a popular video game discovery platform',
-    type: 'BackEnd',
-    tags: ['React & React Query', 'Chakra UI', 'TypeScript'],
+      "This is a mini-version of the rawg website, a popular video game discovery platform",
+    type: "BackEnd",
+    tags: ["React & React Query", "Chakra UI", "TypeScript"],
     imageUrl: gameHub,
   },
   {
-    title: 'Project 2',
+    title: "Project 2",
     description:
-      'This is a mini-version of the rawg website, a popular video game discovery platform',
-    tags: ['React', 'TypeScript', 'Next.js', 'Tailwind', 'Redux'],
-    type: 'FullStack',
+      "This is a mini-version of the rawg website, a popular video game discovery platform",
+    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
+    type: "FullStack",
     imageUrl: gymDesign,
   },
   {
-    title: 'Project 3',
+    title: "Project 3",
     description:
-      'This is a mini-version of the rawg website, a popular video game discovery platform',
-    tags: ['React', 'Next.js', 'SQL', 'Tailwind', 'Framer'],
-    type: 'FrontEnd',
+      "This is a mini-version of the rawg website, a popular video game discovery platform",
+    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
+    type: "FrontEnd",
     imageUrl: portfolioCover,
   },
 ] as const;
 
 export const skillsData = [
   {
-    name: 'HTML5',
+    name: "HTML5",
     image: html,
   },
   {
-    name: 'CSS3',
+    name: "CSS3",
     image: css,
   },
   {
-    name: 'Chakra UI',
+    name: "Chakra UI",
     image: chakra,
   },
   {
-    name: 'Tailwind CSS',
+    name: "Tailwind CSS",
     image: tailwind,
   },
   {
-    name: 'JavaScript',
+    name: "JavaScript",
     image: javascript,
   },
   {
-    name: 'React.js',
+    name: "React.js",
     image: react,
   },
   {
-    name: 'TypeScript',
+    name: "TypeScript",
     image: typescript,
   },
   {
-    name: 'Next.js',
+    name: "Next.js",
     image: next,
   },
   {
-    name: 'Git',
+    name: "Git",
     image: git,
   },
   {
-    name: 'GitHub',
+    name: "GitHub",
     image: github,
   },
   {
-    name: 'Figma',
+    name: "Figma",
     image: figma,
   },
 ] as const;

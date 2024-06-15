@@ -43,9 +43,9 @@ const Skills = ({ name, image }: skillsProps) => {
               once: true,
             }}
             custom={index}
-            className="bg-[#383d46] text-base text-[#ececec] font-medium borderBlack rounded-xl px-2 font-primary flex text-center justify-center items-center cursor-pointer relative overflow-hidden transition-transform duration-300 transform-gpu hover:scale-110"
+            className="bg-[#383d46] text-base text-[#ececec] font-medium borderBlack rounded-xl px-4 font-primary flex text-center justify-center items-center cursor-pointer relative overflow-hidden transition-transform duration-300 transform-gpu"
           >
-            <div className="transition-colors duration-300 p-[6px] rounded-lg flex items-center">
+            <div className="duration-300 p-2 rounded-lg flex items-center focus:scale-110 hover:scale-[1.1] transition-all delay-[0.03s]">
               <Image
                 src={skill.image}
                 alt={skill.name}
