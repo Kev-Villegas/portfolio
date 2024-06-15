@@ -1,12 +1,10 @@
 "use client";
-import React from "react";
+
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { skillsData } from "@/lib/data";
 import SectionHeading from "./SectionHeading";
 import { useSectionInView } from "@/lib/hooks";
-
-type skillsProps = (typeof skillsData)[number];
 
 const fadeInAnimationVariants = {
   initial: {
@@ -22,7 +20,7 @@ const fadeInAnimationVariants = {
   }),
 };
 
-const Skills = ({ name, image }: skillsProps) => {
+const Skills = () => {
   const { ref } = useSectionInView("Skills");
 
   return (
