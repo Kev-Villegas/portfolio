@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { fadeIn } from "./utils/FadeIn";
 import SectionHeading from "./SectionHeading";
 import { useSectionInView } from "@/lib/hooks";
+import { AnimatedText } from "./utils/AnimatedText";
 const About = () => {
   const { ref } = useSectionInView("About");
 
@@ -17,29 +18,15 @@ const About = () => {
       id="about"
     >
       <SectionHeading>About me</SectionHeading>
-      <motion.div
-        variants={fadeIn("left", 0.5)}
-        initial="hidden"
-        whileInView={"show"}
-        viewport={{ once: true, amount: 0.3 }}
-      >
-        <p className="mb-2 font-primary font-light leading-7">
-          Currently pursuing my final year in a{" "}
-          <span className="font-semibold">Technical Programming Degree</span>, I
-          am poised to embark on the next phase of my educational journey by
-          pursuing a{" "}
-          <span className="font-semibold">
-            Bachelor's degree in Computer Science.
-          </span>
-          My core stack is focused on{" "}
-          <span className="font-semibold">Next.js</span> with{" "}
-          <span className="font-semibold">TypeScript</span> and{" "}
-          <span className="font-semibold">React</span>, aligning with the latest
-          industry standards and best practices. Additionally, I am actively
-          delving into backend development, with aspirations to transition into
-          a <span className="font-semibold">Full-Stack Developer</span>.
-        </p>
-      </motion.div>
+      <div>
+        <AnimatedText
+          text="Currently pursuing my final year in a Technical Programming Degree, I'm poised to embark on the next phase of my educational journey by 
+        pursuing a Bachelor's Degree in Computer Science. My core stack is focused on Next.js with TypeScript and React, aligning with the latest industry standards and best practices. Additionally, I am actively delving into backend development, with aspirations to transition into a Full-Stack Developer. "
+          animationSpeed={0.009}
+          once={true}
+          tag="p"
+        />
+      </div>
     </motion.div>
   );
 };
