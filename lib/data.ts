@@ -105,6 +105,14 @@ export const projectsData = [
     type: "FrontEnd",
     imageUrl: portfolioCover,
   },
+  {
+    title: "Project 4",
+    description:
+      "This is a mini-version of the rawg website, a popular video game discovery platform",
+    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
+    type: "FrontEnd",
+    imageUrl: portfolioCover,
+  },  
 ] as const;
 
 export const skillsData = [

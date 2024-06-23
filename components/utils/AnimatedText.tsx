@@ -1,6 +1,7 @@
-'use client'
-import React, { useRef } from 'react';
-import { easeInOut, motion, useInView, } from 'framer-motion';
+"use client";
+
+import React, { useRef } from "react";
+import { motion, useInView } from "framer-motion";
 
 export type AnimatedTextProps = {
   text: string;
@@ -26,7 +27,7 @@ export const defaultAnimations = {
 
 export const AnimatedText: React.FC<AnimatedTextProps> = ({
   text,
-  tag: Wrapper = 'p',
+  tag: Wrapper = "p",
   className,
   once = true,
   animationSpeed = 0.03, // Valor por defecto para la velocidad de la animación
@@ -38,12 +39,12 @@ export const AnimatedText: React.FC<AnimatedTextProps> = ({
     <Wrapper className={className}>
       <motion.span
         ref={ref}
-        initial='hidden'
-        animate={isInView ? 'visible' : 'hidden'}
+        initial="hidden"
+        animate={isInView ? "visible" : "hidden"}
         transition={{ staggerChildren: animationSpeed }} // Usar la prop para la velocidad de la animación
         aria-hidden
       >
-        {text.split('').map((char, index) => (
+        {text.split("").map((char, index) => (
           <motion.span key={index} variants={defaultAnimations}>
             {char}
           </motion.span>
