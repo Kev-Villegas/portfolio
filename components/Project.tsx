@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import React, { useRef } from "react";
-import { fadeIn } from "./utils/FadeIn";
+import { fadeIn } from "@/utils/FadeIn";
 import { projectsData } from "@/lib/data";
 import { motion, useScroll, useTransform } from "framer-motion";
 

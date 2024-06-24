@@ -1,10 +1,10 @@
 "use client";
+
 import React from "react";
 import { motion } from "framer-motion";
-import { fadeIn } from "./utils/FadeIn";
 import SectionHeading from "./SectionHeading";
 import { useSectionInView } from "@/lib/hooks";
-import { AnimatedText } from "./utils/AnimatedText";
+import { AnimatedText } from "../utils/AnimatedText";
 const About = () => {
   const { ref } = useSectionInView("About");
 

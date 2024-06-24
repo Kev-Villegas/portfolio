@@ -1,8 +1,6 @@
 "use client";
 
 import Project from "./Project";
-import { motion } from "framer-motion";
-import { fadeIn } from "./utils/FadeIn";
 import React, { useState } from "react";
 import { projectsData } from "@/lib/data";
 import SectionHeading from "./SectionHeading";

@@ -1,7 +1,7 @@
 import React from "react";
 import { FaHtml5 } from "react-icons/fa";
 import { FaFigma } from "react-icons/fa";
-import gameHub from "@/public/gamehub.webp";
+import gameHub from "@/public/gameHub.webp";
 import { TbBrandPython } from "react-icons/tb";
 import { TbBrandNextjs } from "react-icons/tb";
 import gymDesign from "@/public/gymDesign.webp";

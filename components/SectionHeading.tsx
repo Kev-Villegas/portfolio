@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { fadeIn } from "./utils/FadeIn";
+import { fadeIn } from "@/utils/FadeIn";
 
 type SectionHeadingProps = {
   children: React.ReactNode;
